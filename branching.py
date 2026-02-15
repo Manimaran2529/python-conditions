@@ -36,7 +36,7 @@ if any(letter in vowels or letter in special for letter in word):
 else:
     print("consonants")"""
 
-       # if-elif
+                      # if-elif
 
 #Write a program to find the greatest of two numbers.
 """a=10
@@ -100,3 +100,56 @@ elif c=="/":
 else:
     print("enter a valid operation")"""
     
+                  #nested if
+#Write a program to approve or reject a loan based on salary and credit score conditions.
+"""sal=int(input("enter your salary amount:"))
+if sal>=20000:
+    credit=int(input("enter your  credit score:"))
+    if 200<=credit<=500:
+        loan=int(input("enter your loan amount💵:"))
+        if loan<=100000:
+            print("loan approved successfully 🥳",loan)
+        else:
+            print("loan amount is maxmium 😑",loan)
+    else:
+       print("low credit score👎")
+else:
+    print("low salary we did not provide a loan🥲")"""       
+
+#Write a program to check whether a year is leap year and if February has 28 or 29 days.
+"""year=int(input("enter a year:"))
+month=input("enter a month").lower()
+if year%4==0 and year%100!=0 or year%400==0:
+    print("leap year")
+    if month=="feb":
+        print("it have 29 days")
+    else:
+        print("it have 28 days")
+else:
+    print("not leap year")"""
+
+        ###Real-world Logic (Interview Type)
+#Check whether a number is a palindrome (like 121).
+"""a=input("enter a number")
+b=""
+
+for i in a:
+    b=i+b
+if b==a:
+        print("palindrom")
+else:
+        print(" not palindrom")"""
+
+#Check whether a character is:UppercaseLowercaseDigitSpecial character
+"""a=input("enter a word:")
+upper="ABCDEFGHIJKLMNOPQRSTUVWXYY"
+lower="abcdefghijklmnopqrstuvwxyz"
+digit="123456789"
+if any( letter in upper for letter in a):
+    print("uppercase")
+elif any(letter in lower for letter in a):
+    print("lowercase")
+elif any( letter in digit for letter in a):
+    print("digits")
+else:
+    print("special character")"""
