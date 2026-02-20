@@ -1,6 +1,6 @@
-# a list is a collection of datatypes, we can store the element in a  single variable  by help for  enclosing formate like square bracket
+# a list is a collection of datatypes, we can store the element in a  seq  by help for  enclosing formate like square bracket
 # a list is allowed for the indexing and slicing the elements or values 
-# a list  is allowing a dulicates
+# a list  is allowing a duplicates
 # a list is a order of seq 
 # its 
 #syntax
@@ -41,3 +41,11 @@ print(a[0:len(a):2])# here  we add the step value to 2
 #print the  all number from list
 a=[1,3,4,5,6,8,8,9,32,3,46.7,3,4,5,] 
 print(a[::])# here the start from 0 and end with end of  list step value is 1
+
+       ### concatenation
+# it used to join , merger the sequences + is a concatenation
+a=[1,2,3]
+b=[4,5,6]
+print(a+b)
+
+              ###mutiplication *, its used to repeat the values  in a one sequence
