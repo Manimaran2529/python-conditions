@@ -53,3 +53,14 @@ print(fact)"""
          print(i)"""
 
 
+a=int(input("enter a password length"))
+mani="ab#$*cd2345ef!@#$%^&*()ghijkABCDEFG167890HIJKLMANOQRSTUVWZYZlmnopqrstuvwxyz"
+seed=int(input("enter  a number to get different number"))
+password=""
+gen=mani
+for i in range(a):
+    index=(i*seed+7)%len(gen)
+    password=password+gen[index]
+
+print(password)
+

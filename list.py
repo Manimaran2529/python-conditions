@@ -49,3 +49,5 @@ b=[4,5,6]
 print(a+b)
 
               ###mutiplication *, its used to repeat the values  in a one sequence
+a=[1,2]
+print(a*2)#the multplication nnumber shold alsways in the intergers
