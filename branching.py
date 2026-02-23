@@ -153,3 +153,16 @@ elif any( letter in digit for letter in a):
     print("digits")
 else:
     print("special character")"""
+
+from copy import deepcopy
+a=[10,20]
+b=deepcopy(a)
+b.append([10,20])
+print(b)
+print(a)
+
+
+# clear is used for delet the sequ
+a=[10,20]
+a.clear()
+print(a)

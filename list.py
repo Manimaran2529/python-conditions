@@ -51,3 +51,104 @@ print(a+b)
               ###mutiplication *, its used to repeat the values  in a one sequence
 a=[1,2]
 print(a*2)#the multplication nnumber shold alsways in the intergers
+
+#         inbulid method
+#what is inbulid method
+# its have a separate  properties for a sepearte  datatype like list ,tuple 
+# its used only for the seperate data types for example list has some like append ,extend,remove like that 
+
+#append 
+# its used for add the element in a sequence at a last position
+# we can add a only one element in a list two more or empty its give an errror
+# but we can add  a two or more element in a nested list
+
+#For example1:
+a=[10,20,30]
+a.append("mani")
+print(a)
+
+#for example 2
+a=[10,20,30]
+a.append([10,20,30])
+print(a)
+
+#extend its used for add a more than one element in a sequence
+a=[10,20]
+a.extend(["10",20,"mani"])
+print(a)
+
+a=[10,20]
+a.extend("mani")# without the square bracket its run the strinf in a sequence like "m","a","n","i"
+print(a)
+
+a=[10,20]
+a.extend([[10,"mani"]])# ts used for add the nested list
+print(a)
+
+#insert 
+# 
+# without th index value its give a error
+# its also used for insert the element in  a list by using a index value
+a=[10,20,20]
+a.insert("mani")
+print(a)
+
+#pop
+#without the index alue it will remove the last value in the sequences
+# its  used for remove the element in a sequences
+a=[10,20,30]
+a.pop(1)
+print(a)
+
+a=[1,2,3]
+a.pop()
+print(a)
+
+# remove
+#its used for remove the value for a sequence by giving a var
+a=[10,20]
+a.remove(10)# without the value its give an error
+print(a)
+
+              ####copy###
+# its used for duplicated the sequence
+#there are the three typre of copy are 
+ #general copy
+ #shallow copy
+ #deep copy
+
+
+#general copy 
+# its has the same id 
+# its used to copy the sequences
+#  its does not create new object 
+# one duplicate chnage the main also change
+# for example
+a=[10,20,30]
+b=a# b is general copy
+print(b) 
+
+ #shallowcopy 
+# ist also used for dupllcated the  sequence or object
+# Its has  different id 
+# changE in duplicated not affted the main list
+#we can access the outer sequences only
+a=[10,20,50]
+b=a.copy()
+b.append(10)
+print(b)
+print(a) #o/p [10, 20, 50, 10] [10, 20, 50]
+
+# deepcopy for use deep copy we nedd to a module
+#we can access the outer and inner sequences 
+from copy import deepcopy
+a=[10,20]
+b=deepcopy(a)
+b.append([10,20])
+print(b)
+print(a)
+
+# clear is used for delete the sequ
+a=[10,20]
+a.clear()
+print(a)
