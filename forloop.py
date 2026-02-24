@@ -53,7 +53,7 @@ print(fact)"""
          print(i)"""
 
 
-a=int(input("enter a password length"))
+"""a=int(input("enter a password length"))
 mani="ab#$*cd2345ef!@#$%^&*()ghijkABCDEFG167890HIJKLMANOQRSTUVWZYZlmnopqrstuvwxyz"
 seed=int(input("enter  a number to get different number"))
 password=""
@@ -62,5 +62,40 @@ for i in range(a):
     index=(i*seed+7)%len(gen)
     password=password+gen[index]
 
-print(password)
+print(password)"""
 
+""" to print the numbers how many times its repated
+a = [1, 2, 3, 4, 1]
+b = []
+
+for i in a:
+    if i not in b:
+        count = 0
+        
+        for j in a:
+            if i == j:
+                count = count + 1
+        
+        b.append(i)
+        print(i, "=", count)
+
+   """
+
+#Given a string containing letters, digits, and symbols, determine if 
+# it reads the same forwards and backwards 
+# when considering only alphabetic characters (case-insensitive).
+"""a=["M","A","M"]
+B=[]
+c=[]
+for i in a:
+    lo=i.lower()
+    B.append(lo)
+
+for j in B:
+    c.insert(0,j)
+
+
+if B==c:
+    print("paladrome","1")
+else:
+    print("not paladrome","0")    """

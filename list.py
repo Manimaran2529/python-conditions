@@ -90,7 +90,7 @@ print(a)
 # without th index value its give a error
 # its also used for insert the element in  a list by using a index value
 a=[10,20,20]
-a.insert("mani")
+a.insert(0,"mani")
 print(a)
 
 #pop
@@ -152,3 +152,6 @@ print(a)
 a=[10,20]
 a.clear()
 print(a)
+
+a=[1,2,3,4]
+print(a.count(1))
