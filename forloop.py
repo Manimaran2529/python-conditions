@@ -99,3 +99,18 @@ if B==c:
     print("paladrome","1")
 else:
     print("not paladrome","0")    """
+
+
+""""a=int(input("enter a array size:"))
+b=input("enter a datatypes you want:")
+if b=="int":
+    print([ int(input("enter a number"))  for _ in  range(0,a+1) ])
+   
+elif b=="decimal":
+     print([ float(input("enter a number"))  for _ in  range(0,a+1) ])
+
+elif b=="string":
+     print([ input("enter a number") for _ in  range(0,a+1) ])"""
+ 
+
+ 
