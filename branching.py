@@ -154,4 +154,73 @@ elif any( letter in digit for letter in a):
 else:
     print("special character")"""
 
+ ### match case"""
+a=int(input("enter a number"))
+ 
+if(a>=0):
+    print("positive")
+else:
+    print("negative")
+
+#Write a program to check whether a number is even or odd.
+b=int(input("enter a number:"))
+if b%2==0:
+    print("even")
+else:
+    print("odd")
+
+#Write a program to check whether a person is eligible to vote (age ≥ 18).
+age=int(input("enter your age"))
+if age>=18:
+    print("your are eligible for vote")
+else:
+    print("your are  not eligible for vote")
+
+#Write a program to find the largest of two numbers.
+a=int(input("enter a first number"))
+b=int(input("enter a second number"))
+
+if a>b:
+    print("a is large")
+elif a<b:
+    print("b is largest")
+else:
+    print("both are equal")
+
+#Write a program to find the largest of two numbers.
+a=int(input("enter a first number"))
+b=int(input("enter a second number"))
+c=int(input("enter a second number"))
+
+if a>b and a>c:
+    print(" a is largest")
+elif b>a and b>c:
+    print("b is largest number")
+else:
+    print("c is largest number")
+
+#Write a program to check whether a number is: Positive Negative Zero
+a=int(input("enter a number"))
+if a>=1:
+    print("postive")
+elif a==0:
+    print("zero")
+else:
+    print("negative")
+
+#Write a program to check whether a character is:vowel Consonant
+ch = input("Enter a character: ").lower()
+b="aeiou"
+if ch in b:
+    print("Vowel")
+else:
+    print("Consonant")
+
+#Write a program to check whether a year is a leap year.
+a=int(input("enter a year"))
+if a%4==0 and a%100!=0 or a%400==0:
+    print("leap year")
+else:
+    print("no leap year")
+
 
