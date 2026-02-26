@@ -23,3 +23,5 @@ print([i for i in range(1,21) if i%2==0 and i%3==0])
 
 #Create a list of boolean values showing whether numbers from 1 to 10 are divisible by 3
 print( [i%3==0 for i in range(1,10) ])
+
+

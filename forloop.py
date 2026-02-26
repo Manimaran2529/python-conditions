@@ -114,3 +114,17 @@ elif b=="string":
  
 
  
+ ### match case"""
+a=int(input("enter a number"))
+ 
+if(a<=0):
+    print("positive")
+else:
+    print("negative")
+
+
+b=int(input("enter a number:"))
+if b%2==0:
+    print("even")
+else:
+    print("odd")
