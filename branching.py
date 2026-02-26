@@ -141,18 +141,16 @@ else:
         print(" not palindrom")"""
 
 #Check whether a character is:UppercaseLowercaseDigitSpecial character
-"""a=input("enter a word:")
-upper="ABCDEFGHIJKLMNOPQRSTUVWXYY"
-lower="abcdefghijklmnopqrstuvwxyz"
-digit="123456789"
-if any( letter in upper for letter in a):
-    print("uppercase")
-elif any(letter in lower for letter in a):
-    print("lowercase")
-elif any( letter in digit for letter in a):
-    print("digits")
+a = input("Enter a character: ")
+
+if 'A' <= a <= 'Z':
+    print("Uppercase")
+elif 'a' <= a <= 'z':
+    print("Lowercase")
+elif '0' <= a <= '9':
+    print("Digit")
 else:
-    print("special character")"""
+    print("Special character")
 
  ### match case"""
 a=int(input("enter a number"))
@@ -224,3 +222,22 @@ else:
     print("no leap year")
 
 
+            #### match case
+#Write a program to display the day of the week 1 → Monday 2 → Tuesday 3 → Wednesday 4 → Thursday 5 → Friday 6 → Saturday 7 → Sunday
+a=int(input("enter a number from 1-7"))
+
+match a:
+    case 1:
+        print("monday")
+    case 2:
+        print("tuesday")
+    case 3:
+        print("wednesday")
+    case 4:
+        print("thursday")
+    case 5:
+        print("friday")
+    case 6:
+        print("saturday")
+    case 7:
+        print("sunday")

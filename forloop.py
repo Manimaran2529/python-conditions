@@ -114,3 +114,8 @@ elif b=="string":
  
 
  
+a=int(input("enter a number from 1-7"))
+
+match a:
+    case 1:
+        print("monday")
