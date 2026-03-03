@@ -113,9 +113,3 @@ elif b=="string":
      print([ input("enter a number") for _ in  range(0,a+1) ])"""
  
 
- 
-a=int(input("enter a number from 1-7"))
-
-match a:
-    case 1:
-        print("monday")

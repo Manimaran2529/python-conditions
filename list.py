@@ -155,3 +155,9 @@ print(a)
 
 a=[1,2,3,4]
 print(a.count(1))
+
+                         ###inbulid method for pratice 
+# modify the elements
+a=[1,2,3,4,5]
+a[1]="mani"
+print(a)
