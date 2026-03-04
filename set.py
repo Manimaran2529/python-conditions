@@ -2,3 +2,60 @@
 ##its is unorder collection of data
 ##its mutable
 ##its does not support the duplicates
+##its does not support the concatnation and mutlipication
+## its does not support indexing and slicing 
+# we can modify the elemets
+
+                 ##inbulid methods
+## add its used to add the elments in the set
+a={1,"maran",3,4}
+a.add("mani")
+print(a)
+
+
+## remove  its used to remove the elemets in the set by using the aruguments
+a={1,"maran",3,4}
+a.pop("maran")
+print(a)
+
+##pop its also used to remove an  random elements  in the list
+a={1,22,33}
+a.remove(1)
+print(a) 
+
+##discard its used to remove the elements in the list if the elemenats is not present its does not rise an error
+a={1,2,3,4,5}
+a.discard("mani")
+print(a)
+
+
+##union its used to add the one or more elements in a set its creatng a new set
+a={1,2,3,45}
+b={1,22,34,5,} 
+c=a.union(b)
+print(c)
+
+## update its used to add the elements or iterable in the exist set not create an new set
+a={1,2,3,45}
+b={1,22,34,5,"manim"} 
+a.update(b)
+print(a)
+
+# copy
+
+#general copy  its used for copy by using assigment operators we chnage one other aolso change  its return null
+a={1,"harini",3,45}
+b==a
+b.pop()
+print(a)
+print(b)
+
+
+#shallow copy
+#its also used for copy the elements in the exsiting list but one change other did not change 
+a={1,"harini",3,45}
+b=set.copy(a)
+b.pop()
+print(a)
+print(b)
+
