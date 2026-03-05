@@ -41,7 +41,7 @@ b={1,22,34,5,"manim"}
 a.update(b)
 print(a)
 
-# copy
+                                 # copy
 
 #general copy  its used for copy by using assigment operators we chnage one other aolso change  its return null
 a={1,"harini",3,45}
@@ -58,4 +58,34 @@ b=set.copy(a)
 b.pop()
 print(a)
 print(b)
+
+                     #intersection
+                     #  is used to return the common value  from a set
+a={1,23,4,}
+b={1,"mani","maran"}
+c=a.intersection(b)
+print(c) #o/p={1}
+
+a={1,23,4,5}
+b={"harini","mani","maran"}
+c=a.intersection(b)
+print(c)# if any thing not present its return emptyy set
+
+#intersection_update its  update value if same values are present to upadte the  exit set  return type is null
+a={1,2,3,5}
+b={1,"mani"}
+a.intersection_update(b)
+print(a)
+
+a={1,2,3,5}
+b={1,"mani"}
+a.intersection_update(b)
+print(a)# any thing not present its return empty set
+
+                              ##difference
+#its used for find the same elements in the set if the elements are same in two sets it remove it
+a={1,2,3,"mani"}
+b={"mani",10,20,30}
+c=a.difference(b)
+print(c)
 
