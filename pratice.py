@@ -1,4 +1,2 @@
-a={1,2,3}
-b={"mani"}
-c=a.issuperset(b)
-print(c)
+a=[1,2,3]
+print(a,a.append("mani"))
