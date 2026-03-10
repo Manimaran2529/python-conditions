@@ -101,5 +101,110 @@ print(a)
 d={}.fromkeys[1,2,3,4],"py"
 print(d)#o/p=> {1: 'py', 2: 'py', 3: 'py', 4: 'py'}
 
+               ###copy
+##there are three copy in dict(general copy,deepcopy,shallow copy)
+#general copy and parent dic have a same memory adress we can the one other also change
+a={
+    1:2,
+    "b":"apple"
+}
+b=a
+b["c"]="mani"
+print(b)#{1: 2, 'b': 'apple', 'c': 'mani'}
+print(a)#{1: 2, 'b': 'apple', 'c': 'mani'}
 
-                                   ###copy
+#shallow copy
+#the outer dic have different adresss the inner has same adress
+a={
+    1:2,
+    "b":"apple"
+}
+b=a.copy()
+b["c"]="mani"
+print(b)#{1: 2, 'b': 'apple', 'c': 'mani'}
+print(a)#{1: 2, 'b': 'apple'}
+
+a={
+    1:2,
+    "b":["apple","cat"],
+}
+b=a.copy()
+b["b"][0]="mani"
+print(b)#{1: 2, 'b': ['mani', 'cat']}
+print(a)#{1: 2, 'b': ['mani', 'cat']}
+
+
+#deepcopy both also have a different adress so the parents dict did not change
+#outer
+import copy
+a={
+    1:2,
+    "b":["apple","cat"],
+    "c":"mani"
+}
+b=copy.deepcopy(a)
+b["c"]="change"
+print(b)#{1: 2, 'b': ['apple', 'cat'], 'c': 'change'}
+print(a)#{1: 2, 'b': ['apple', 'cat'], 'c': 'mani'}
+
+#inner 
+import copy
+a={
+    1:2,
+    "b":["apple","cat"],
+}
+b=copy.deepcopy(a)
+b["b"][0]="mani"
+print(b)#{1: 2, 'b': ['mani', 'cat']}
+print(a)#
+{1: 2, 'b': ['apple', 'cat']}
+
+               ##clear
+#its used to empty the dictinary remove all the keys and values in the dict and return the empty dict
+a={1: 2, 'b': ['apple', 'cat'], 'c': 'mani'}
+a.clear()
+print(a) #o/p={}
+
+                      ###keys
+#its used to only print the keys present in the dict
+a={1: 2, 'b': ['apple', 'cat'], 'c': 'mani'}
+b=a.keys()
+print(b)#o/p=([1, 'b', 'c'])
+
+                         #values
+#its used to print only the values present in the dict 
+a={1: 2, 'b': ['apple', 'cat'], 'c': 'mani'}
+b=a.values()
+print(b)#o/p=([2, ['apple', 'cat'], 'mani'])
+
+                          #items
+# its used to print the both keys and values in the form of tuple 
+a={1: 2, 'b': ['apple', 'cat'], 'c': 'mani'}
+b=a.items()
+print(b)#o/p=([(1, 2), ('b', ['apple', 'cat']), ('c', 'mani')])
+
+                               #looping
+#in dict we use only the for loop
+a={1: 2, 'b': ['apple', 'cat'], 'c': 'mani'}
+
+for i in a:
+    print(i) #its only print the keys only  1 b c 
+
+a={1: 2, 'b': ['apple', 'cat'], 'c': 'mani'}
+
+for i in a.values():
+    print(i,end=" ")#its used to print only the values  2 ['apple', 'cat'] mani 
+
+
+a={1: 2, 'b': ['apple', 'cat'], 'c': 'mani'}
+
+for i in a.items():
+    print(i,end=" ")# its used to print the both keys and values  (1, 2) ('b', ['apple', 'cat']) ('c', 'mani') 
+
+
+##comprehension
+a = {1: 2, 'b': 'apple', 'c': 'mani'}
+
+b = {k:v for k,v in a.items()}
+
+print(b)#o/p={1: 2, 'b': 'apple', 'c': 'mani'}
