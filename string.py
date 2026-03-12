@@ -48,11 +48,13 @@ print(a[2:-1])
 #inbulid methods:
 
                                          #lower 
+##its used to convert charatter into  a lower case 
 a="MANI"
-b=a.lower()
+a=a.lower()
 print(a)#mani
 
                                            #islower 
+##its used to check the values is lower or not its return boolean values                                            
 a="MANI"
 a=a.islower()
 print(a)#false
@@ -62,11 +64,13 @@ a=a.islower()
 print(a)#true
 
                                        #upper 
+##its used to convert charatter into  a upper case 
 a="mani"
 b=a.upper()
 print(b)#MANI
 
-                                           #isupper
+                                        #isupper
+##its used to check the values is upper or not its return boolean values    
 a="MANI"
 a=a.isupper()
 print(a)#true
@@ -75,29 +79,134 @@ a="mani"
 a=a.isupper()
 print(a)#FALSE
 
-                                               #TITTLE
+                                        #TITTLE
+# its convert the the each word first letter into a upper case
 a="mani"
 a=a.title()
 print(a)#Mani
 
-                                                     #istittle
+                                        #istittle
+#its return the boolen values its the chartcter is n tiille its shoes true or false
 a="Mani"
 a=a.istitle()
 print(a)#true
 
+a="Mani Maran"
+a=a.istitle()
+print(a)#true
 
+a="Mani maran"
+a=a.istitle()
+print(a)#false
 
 a="mani"
 a=a.istitle()
 print(a)#false
   
-                            ##concatnation
+                             ##capitalize
+#its convert only the first letter in uppr like tittle
+a="manimaran"    
+a=a.capitalize()
+print(a)#Manimaran
+
+a="mani maran"
+a=a.capitalize()
+print(a)#Mani maran ## (but in tittle the iutpt becomes  Mani Maran)
+
+                        ##concatnation
+#its used to add a string 
 
 a="mani"
 b='maran'
 c=a+b
 print(c)#manimaran
-                                 ###multiplication
+                         ###multiplication
+# its is used to mutplication the string 
 a="manimaran"
 c=a*2
 print(c)#"manimaranmanimaran"
+
+                           ####Swap case
+# its used to  convert the charcater into oppsoise like upper into lower and lower into upper
+a="Mani Maran"
+a.swapcase()
+print(a)#o/p=>mANI mARAN
+
+a="mANI mARAN"
+a=a.swapcase()
+print(a)#Mani Maran
+
+
+                             ##capitalize
+#its convert only the first letter in uppr like tittle
+a="manimaran"    
+a=a.capitalize()
+print(a)#Manimaran
+
+a="mani maran"
+a=a.capitalize()
+print(a)#Mani maran ## (but in tittle the iutpt becomes  Mani Maran)
+
+
+
+                               ###index
+#if the value is  rise an error ishows -1 not an errror but in index its rise an error
+#its used to find the index position of a character in a string
+#its take three arugments values start and stop 
+#its have two indexing one from left to  right and 
+#rindex   its give  the last indexing position of a elements 
+#if the value is  rise an error ishows  an errror not an -1
+a="manimaran is a good boy"
+b=a.index("a")
+print(b)#o/p=>1
+
+a="manimaran is a good boy"
+b=a.index("a")
+print(b)#o/p=>13(last occurences position of the charcters)
+
+a="manimaran is a good boy"
+b=a.index("a",2,6)# a is a value and 2 is the start and 6 is a stop
+print(b)#o/p=>5
+
+
+a="manimaran is a good boy"
+b=a.index("22")
+print(b)#o/p=>error 
+
+                                    ##find (its smiliar to the index method)
+#if the value is  rise an error ishows -1 not an errror but in index its rise an error
+#its used to find the index position of a character in a string
+#its take three arugments values start and stop 
+#its have two indexing one from left to  right and 
+# rfind  its give  the last indexing position of a elements 
+#if the value is  rise an error ishows -1 not an errror
+ 
+a="manimaran is a good boy"
+b=a.find("a")
+print(b)#o/p=>1
+
+a="manimaran is a good boy"
+b=a.rfind("a")
+print(b)#o/p=>13(last occurences position of the charcters)
+
+a="manimaran is a good boy"
+b=a.find("a",2,6)# a is a value and 2 is the start and 6 is a stop
+print(b)#o/p=>5
+
+
+a="manimaran is a good boy"
+b=a.find("22")
+print(b)#o/p=>-1 
+
+                               ###count 
+#its used to  count the  ocuunerences of the charactes how many times ist preset
+#its take three aruguments but other non primituve one aruguments only
+
+a="manimaran is a very good boy"
+b=a.count("m")
+print(b)#o/p=> 2
+
+
+a="manimaran is a very good boy"
+b=a.count("m",3,6)#start and stop values
+print(b)#o/p=>1

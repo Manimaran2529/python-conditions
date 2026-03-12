@@ -1,3 +1,4 @@
-a="manimaran"
-c=a*2
-print(c)
+
+a="Mani Maran"
+a=a.istitle()
+print(a)#false
