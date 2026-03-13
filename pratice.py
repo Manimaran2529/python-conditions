@@ -1,4 +1,2 @@
-
-a="Mani Maran"
-a=a.istitle()
-print(a)#false
+a="     manimaranmmmmm         "
+print(a.strip( ))#its does not excuted group of character is extues char bu char
