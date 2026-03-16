@@ -158,7 +158,7 @@ print(b)#o/p=>5
 
 
 a="manimaran is a good boy"
-b=a.index("22")
+#b=a.index("22")
 print(b)#o/p=>error 
 
                                 ##find (its smiliar to the index method)
@@ -183,7 +183,7 @@ print(b)#o/p=>5
 
 
 a="manimaran is a good boy"
-b=a.find("22")
+#b=a.find("22")
 print(b)#o/p=>-1 
 
                                ###count 
@@ -272,3 +272,70 @@ print(b)#mmanimaran
 a="mmanimaranmm"
 b=a.removesuffix("m")#remove only one m in the rightside 
 print(b)#mmanimaranm
+
+                              ##center
+#its used for aligment the string into the center
+#its take two arguments one is(length  we provied more than a string length  and separator)
+#if the string is has odd values is goes from right to left
+#if the string is has even values is goes from left to right
+
+a="manimaran"
+b=a.center(12)# here 12 is length for a center we give more than a string manimaran=9 so we gave 12
+print(b)#o/p=>  manimaran  
+
+a="manimaran"
+b=a.center(12,"_")# here 12 is length for a center we give more than a string manimaran=9 so we gave 12
+print(b)#o/p=>_manimaran__ its has odd number of string soo its goes from right to left 
+
+
+a="manimara"
+b=a.center(13,"_")#
+print(b)#o/p=>___manimara__  its has even number so its goes from left to right
+
+
+                                #rjust
+#its used to aligne the give string in the right side 
+a="mani"
+b=a.rjust(6,"_")
+print(b)#o/p=>__mani
+
+                                #ljust
+a="mani"
+b=a.ljust(6,"_")
+print(b)#o/p=>mani__
+                                #join
+#its used to convert the list set tuple into a single string 
+#one condition the list or set only contains the string only not other datatypes like init,bollen or float       
+# its take the separator             
+a=["mani","maran"]
+b=",".join(a)# its " " is a separator
+print(b)#o/p=>mani,maran
+
+a=["mani","maran"]
+b=" ".join(a)# its " " is a separator
+print(b)#o/p=>mani maran
+
+a=["mani","maran"]
+b="#".join(a)# its " " is a separator
+print(b)#o/p=>mani#maran
+
+                                    ##partition
+#its similar to the split methos instend  we provide a string for a split and retun in the tuple 
+
+a="manimaran"
+b=a.partition("i")#its take the first occurences and split it
+print(b)#o/p=>('man', 'i', 'maran')
+
+a="mani"
+b=a.partition("z")#if the values is not present 
+print(b)#o/P=>('mani', '', '')
+                                 #rpartition
+#its take the first ocurences from the right side not left
+a="manimaran"
+b=a.rpartition("a")
+print(b)#o/p=>('manimar', 'a', 'n')
+
+
+a="manimaran"
+b=a.rpartition(" ")
+print(b)#o/p=>('', '', 'manimaran')
