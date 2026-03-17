@@ -89,3 +89,4 @@ b={"mani",10,20,30}
 c=a.difference(b)
 print(c)
 
+[]

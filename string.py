@@ -104,7 +104,7 @@ a=a.istitle()
 print(a)#false
   
                              ##capitalize
-#its convert only the first letter in uppr like tittle
+#its convert only the first  word letter in upper like tittle
 a="manimaran"    
 a=a.capitalize()
 print(a)#Manimaran
@@ -161,7 +161,7 @@ a="manimaran is a good boy"
 #b=a.index("22")
 print(b)#o/p=>error 
 
-                                ##find (its smiliar to the index method)
+                            ##find (its smiliar to the index method)
 #if the value is  rise an error ishows -1 not an errror but in index its rise an error
 #its used to find the index position of a character in a string
 #its take three arugments values start and stop 
@@ -230,7 +230,7 @@ b=a.splitlines(keepends=True)
 print(b)#['Manimaran\n', 'is\n', 'a\n', 'never\n', 'goodboy']
 
 
-                              ##strip(its default remove the space in the starting and ending)
+                            ##strip(its default remove the space in the starting and ending)
 #its used to remov the characters in a string 
 
 a="     manimaranmmmmm         "
@@ -329,6 +329,7 @@ print(b)#o/p=>('man', 'i', 'maran')
 a="mani"
 b=a.partition("z")#if the values is not present 
 print(b)#o/P=>('mani', '', '')
+
                                  #rpartition
 #its take the first ocurences from the right side not left
 a="manimaran"
@@ -339,3 +340,59 @@ print(b)#o/p=>('manimar', 'a', 'n')
 a="manimaran"
 b=a.rpartition(" ")
 print(b)#o/p=>('', '', 'manimaran')
+
+                    ###replace
+#its used fot replace a give string or character in a particular place
+#its take three aruguments(old string,new string, count is optinal)
+a="manimaran"
+b=a.replace("a","harini")
+print(b)#o/p=>m#nim#r#n
+
+a="manimaran"
+b=a.replace("m","@",count=2)
+print(b)#o/p=>m@nim@ran
+                        
+                        ##zfill=>zero fill(its does not back the +,- revision)
+
+#its mainly used for pattern programs
+#its set the zero to the infront values based upon the dimension
+a="1"
+b=a.zfill(2)
+print(b)#o/p=>01
+
+a="1"
+b=a.zfill(3)
+print(b)#o/p=>001
+
+a="+1"
+b=a.zfill(3)
+print(b)#+0001
+
+a="-1"
+b=a.zfill(3)
+print(b)#-0001
+
+a="*1"
+b=a.zfill(3)
+print(b)#000*1
+                      
+                      #formated string (is fast compare to the fromated string)
+#its used for insert the values in the place holder{}
+a=int(input("enter a number"))
+print("your number is",a) #for this insead of we use the fromated string 
+
+a=int(input("enter a number"))
+print(f" your number is {a}")#its change the values based upon the user input its called formated string
+#o/p=> your number is 23
+
+a="mani"
+b="21"
+print(f"my name is{a} my age is {b}")#o/p=>my name ismani my age is 21
+
+
+                          #fromat string
+#its work solwe compare to the formated method its take more time for excution
+#its same as the function as fromat string 
+a="my name is {a},my age is{b}"
+b=a.format(a="mani",b="21")
+print(b)#o/p=>my name is mani,my age is21
