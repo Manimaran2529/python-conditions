@@ -1,3 +1,4 @@
-a="my name is {a},my age is{b}"
-b=a.format(a="mani",b="21")
-print(b)
+a={1,2,3,4}
+b={1,2,3,4}
+c=b.issubset(a)
+print(c)#fale
