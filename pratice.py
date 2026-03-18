@@ -1,4 +1,3 @@
-a={1,2,3,4}
-b={1,2,3,4}
-c=b.issubset(a)
-print(c)#fale
+a="manimaran"
+b=a.endswith("n",1,9)
+print(b)#o/p=>true

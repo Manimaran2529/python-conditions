@@ -351,7 +351,39 @@ print(b)#o/p=>m#nim#r#n
 a="manimaran"
 b=a.replace("m","@",count=2)
 print(b)#o/p=>m@nim@ran
-                        
+
+#removing we give space
+a="manimaran"
+b=a.replace("mani"," ")
+print(b)#o/p=>maran
+
+
+                       ##maketrans and translate
+#the translate its depend on the maketrans without maketrans the translate not work
+#its used to remove or replace a string not in a combine seqeunce 
+#first we want to create a maketrans after pass to the translate
+#the translate produce the output of the string in the assscii key formate 
+# we pass  the asscii key to the translate
+#its excutes  character by character 
+# we use when we want to chnaged the charcter line by line
+# we can not give the length here but replce we use it
+
+a="manimaran"
+table=a.maketrans("mani","##@@")
+b=a.translate(table)
+print(b)#o/p=>##@@##r#@
+
+#for removing we give space
+a="manimaran"
+table=a.maketrans("mani","    ")
+b=a.translate(table)
+print(b)
+
+#its replace method its excutes a group of character 
+a="manimaran"
+b=a.replace("mani","#")
+print(b)#o/p=>#maran
+
                         ##zfill=>zero fill(its does not back the +,- revision)
 
 #its mainly used for pattern programs
@@ -395,4 +427,55 @@ print(f"my name is{a} my age is {b}")#o/p=>my name ismani my age is 21
 #its same as the function as fromat string 
 a="my name is {a},my age is{b}"
 b=a.format(a="mani",b="21")
-print(b)#o/p=>my name is mani,my age is21
+print(b)#o/p=>my name is mani,my age is21  
+
+             ### start with
+#its return the bollen values 
+# its check the first character are  mathing  with  the give input
+# if its  matched its return true and return false 
+#  its take three arguments start stop, values 
+a="manimaran"
+b=a.startswith("m")
+print(b)#o/p=>true
+
+a="manimaran"
+b=a.startswith("x")
+print(b)#o/p=>false 
+
+a="manimaran"
+b=a.startswith("r",6,10)
+print(b)#o/p=>true 
+
+# we can pass with the set also 
+a="manimaran"
+b=a.startswith(("m","M"))
+print(b)#o/p=>true 
+
+
+                           #endswith
+#its also similar to the start with but it check the end  character
+#its also take three arguments 
+a="manimaran"
+b=a.endswith("n")
+print(b)#o/p=>true 
+
+a="manimaran"
+b=a.endswith("m")
+print(b)#o/p=>false 
+
+a="manimaran"
+b=a.startswith(("n","M"))
+print(b)#o/p=>true 
+
+a="manimaran"
+b=a.startswith(("m","M"))
+print(b)#o/p=>false
+
+
+a="manimaran"
+b=a.endswith("r",6,10)
+print(b)#o/p=>false
+
+a="manimaran"
+b=a.endswith("n",1,9)
+print(b)#o/p=>true
