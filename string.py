@@ -470,7 +470,9 @@ print(b)#o/p=>true
 a="manimaran"
 b=a.startswith(("m","M"))
 print(b)#o/p=>false
+  
 
+                  ##endswith
 
 a="manimaran"
 b=a.endswith("r",6,10)
